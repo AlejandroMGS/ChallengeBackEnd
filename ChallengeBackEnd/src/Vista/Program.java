@@ -17,13 +17,29 @@ public class Program {
 
             switch (e.getType()) {
                 case C_Monedas:
+                    int pesos = -1;
+
+                    do{
+                        String _pesos = JOptionPane.showInputDialog("Ingrese la cantidad de dinero que desea convertir");
+                        
+                        try {
+                            pesos = Integer.parseInt(_pesos);
+                        } catch (NumberFormatException ex) {
+                            JOptionPane.showMessageDialog(null, "Ingrese sólo números");
+                        }
+                    }while(pesos == -1);
                     
+                    
+
                     break;
 
                 case C_Temperatura:
 
                     break;
             }
+            
+            
+            
             
         }while(cicle);
 
