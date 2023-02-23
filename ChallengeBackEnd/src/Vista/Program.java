@@ -38,8 +38,16 @@ public class Program {
                     break;
             }
             
+            int opc = JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Question", JOptionPane.YES_NO_CANCEL_OPTION);
             
-            
+            switch(opc) {
+                case JOptionPane.NO_OPTION:
+                    cicle = false;
+                    break;
+                    
+                default:
+                    break;
+            }
             
         }while(cicle);
 
