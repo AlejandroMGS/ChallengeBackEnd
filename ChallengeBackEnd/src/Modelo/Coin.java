@@ -1,6 +1,6 @@
 package Modelo;
 
-public class Coin implements ICoin{
+public class Coin {
     private String name;
     private int pesosValue;
     private CoinType type;
@@ -15,12 +15,10 @@ public class Coin implements ICoin{
         return type;
     }
 
-    @Override
     public float convertToCoinType(int value) {
         return value / pesosValue;
     }
 
-    @Override
     public int convertToPesos(float value) {
         return (int)(pesosValue * value);
     }

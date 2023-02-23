@@ -6,5 +6,11 @@ public enum CoinType {
     Libras,
     Yen,
     Won_Coreano,
-    Yuan
+    Yuan,
+    Dolar_R,
+    Euro_R,
+    Libras_R,
+    Yen_R,
+    Won_Coreano_R,
+    Yuan_R
 }
