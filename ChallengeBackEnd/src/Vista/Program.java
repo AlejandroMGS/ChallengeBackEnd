@@ -17,6 +17,8 @@ public class Program {
                                 new Option("Conversor de temperatura", OptionType.C_Temperatura) };
 
             Option e = (Option) JOptionPane.showInputDialog(null, "Elija una opción", "Menú", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
+            
+            if(e==null) break;
 
             switch (e.getType()) {
                 case C_Monedas:
@@ -45,7 +47,11 @@ public class Program {
                                         new Coin("Yen a Pesos", 0, CoinType.Yen_R),
                                         new Coin("Yuan a Pesos", 0, CoinType.Yuan_R)};
                     
-                    Coin c = (Coin)JOptionPane.showInputDialog(null, "Escoja la moneda a la que desea convertir", "Monedas", JOptionPane.QUESTION_MESSAGE, null, oCoins, oCoins[0])
+                    Coin c = (Coin)JOptionPane.showInputDialog(null, "Escoja la moneda a la que desea convertir", "Monedas", JOptionPane.QUESTION_MESSAGE, null, oCoins, oCoins[0]);
+                    
+                    switch(c.getType()) {
+                        
+                    }
 
                     break;
 
