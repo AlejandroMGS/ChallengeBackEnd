@@ -17,17 +17,17 @@ public class Program {
 
             switch (e.getType()) {
                 case C_Monedas:
-                    int pesos = -1;
+                    int cant = -1;
 
                     do{
-                        String _pesos = JOptionPane.showInputDialog("Ingrese la cantidad de dinero que desea convertir");
+                        String _cant = JOptionPane.showInputDialog("Ingrese la cantidad de dinero que desea convertir");
                         
                         try {
-                            pesos = Integer.parseInt(_pesos);
+                            cant = Integer.parseInt(_cant);
                         } catch (NumberFormatException ex) {
                             JOptionPane.showMessageDialog(null, "Ingrese sólo números");
                         }
-                    }while(pesos == -1);
+                    }while(cant == -1);
                     
                     
 
