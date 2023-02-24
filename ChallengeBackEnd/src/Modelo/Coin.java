@@ -2,10 +2,10 @@ package Modelo;
 
 public class Coin {
     private String name;
-    private int pesosValue;
+    private float pesosValue;
     private CoinType type;
 
-    public Coin(String name, int pesosValue, CoinType type) {
+    public Coin(String name, float pesosValue, CoinType type) {
         this.name = name;
         this.pesosValue = pesosValue;
         this.type = type;
@@ -15,13 +15,12 @@ public class Coin {
         return type;
     }
 
-    public float convertToCoinType(int value) {
-        return value / pesosValue;
-    }
-
-    public int convertToPesos(float value) {
-        return (int)(pesosValue * value);
+    public float getPesosValue() {
+        return pesosValue;
     }
     
+    public String toString() {
+        return name;
+    }
     
 }
