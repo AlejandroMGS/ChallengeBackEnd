@@ -51,7 +51,53 @@ public class Program {
                     Coin c = (Coin)JOptionPane.showInputDialog(null, "Escoja la moneda a la que desea convertir", "Monedas", JOptionPane.QUESTION_MESSAGE, null, oCoins, oCoins[0]);
                     
                     switch(c.getType()) {
-                        
+                        case Dolar:
+                            JOptionPane.showMessageDialog(null,  "Tienes " + Convertidor.convertToCoinType(cant, c) + " Dolares", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+                            
+                        case Euro:
+                            JOptionPane.showMessageDialog(null,  "Tienes " + Convertidor.convertToCoinType(cant, c) + " Euros", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+                            
+                        case Libras:
+                            JOptionPane.showMessageDialog(null,  "Tienes " + Convertidor.convertToCoinType(cant, c) + " Libras", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+                            
+                        case Won_Coreano:
+                            JOptionPane.showMessageDialog(null,  "Tienes " + Convertidor.convertToCoinType(cant, c) + " Wones Coreanos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+                            
+                        case Yen:
+                            JOptionPane.showMessageDialog(null,  "Tienes " + Convertidor.convertToCoinType(cant, c) + " Yenes", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+                            
+                        case Yuan:
+                            JOptionPane.showMessageDialog(null,  "Tienes " + Convertidor.convertToCoinType(cant, c) + " Yuanes", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+                            
+                        case Dolar_R:
+                            JOptionPane.showMessageDialog(null, "Tienes " + Convertidor.convertToPesos(cant, c) + " Pesos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+
+                        case Euro_R:
+                            JOptionPane.showMessageDialog(null, "Tienes " + Convertidor.convertToPesos(cant, c) + " Pesos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);    
+                            break;
+
+                        case Libras_R:
+                            JOptionPane.showMessageDialog(null, "Tienes " + Convertidor.convertToPesos(cant, c) + " Pesos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+
+                        case Won_Coreano_R:
+                            JOptionPane.showMessageDialog(null, "Tienes " + Convertidor.convertToPesos(cant, c) + " Pesos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+
+                        case Yen_R:
+                            JOptionPane.showMessageDialog(null, "Tienes " + Convertidor.convertToPesos(cant, c) + " Pesos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
+
+                        case Yuan_R:
+                            JOptionPane.showMessageDialog(null, "Tienes " + Convertidor.convertToPesos(cant, c) + " Pesos", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                            break;
                     }
 
                     break;
